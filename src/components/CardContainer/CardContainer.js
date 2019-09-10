@@ -9,7 +9,6 @@ export default class CandidateContainer extends Component {
             return <Card index={index} data={candidate} key={candidate.id} /> 
         }) : null;
 
-        console.log("cardcontainer", this.props.candidateData, "here", candidates);
         return (
             <div className="card-container">
                 {candidates}

@@ -27,10 +27,9 @@ export default class MainContainer extends Component {
     }
 
     render() {
-        console.log(this.state.searchString);
-        console.log("maincontainer", this.state.candidateData);
         let candidateData = [...this.state.candidateData];
 
+        //NOT DRY, but quick solution to filter the array of data by the input string from SearchBar component
         if (this.state.searchString) {
             candidateData = candidateData.filter(
                 candidate =>
