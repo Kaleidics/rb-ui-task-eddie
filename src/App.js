@@ -2,17 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+import MainContainer from './components/MainContainer/MainContainer';
 
-  componentDidMount() {
-    fetch('/candidates.json')
-      .then(response => {
-        return response.json();
-      })
-      .then(candidates => { 
-        console.log(candidates)
-      });
-  }
+class App extends Component {
 
   render() {
     return (
@@ -20,6 +12,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
+        <MainContainer></MainContainer>
       </div>
     );
   }

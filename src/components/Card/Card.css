@@ -1,0 +1,61 @@
+.card {
+    width: 15%;
+    margin: 2% 3%;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: rgb(211, 211, 211) 1px 1px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.card-primary {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card-secondary {
+    text-align: left;
+}
+
+.card-name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 400;
+    color: #311031;
+    font-size: 28px;
+    margin: 0;
+}
+
+.card-name--first {
+    margin-bottom: 5px;
+}
+
+.card-name--last {
+    margin-bottom: 5px;
+}
+
+.card-grade {
+    font-size: 28px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.card-position {
+    font-size: 20px;
+    color: #922066;
+}
+
+.card-company {
+    font-size: 18px;
+    color: #311031;
+}
